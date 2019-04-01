@@ -1,0 +1,132 @@
+.header{
+    width: 100%;
+    height: 69px;
+}
+/*体部*/
+/*轮播图左右箭头*/
+.carousel{
+    margin-top: 45px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width:3% !important;
+    height:6% !important;
+    border-radius:50% !important;
+    top: 47% !important;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    background-color:#00a1ed;
+}
+.carousel-control-prev{
+    left: 0.2rem;
+}
+.carousel-control-next{
+    right: 0.2rem;
+}
+/*轮播指示器*/
+.carousel-indicators{
+    height: 10px;
+
+}
+.carousel-indicators li{
+    width:10px !important;
+    height:10px !important;
+    border:1px solid #666 !important;
+    border-radius: 50% !important;
+}
+.carousel-indicators .active{
+    background-color: #00a1ed !important;
+}
+/*简介部分*/
+div.yljj>div{
+    position: relative;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+div.yljj>div a{
+    position:absolute;
+    top:75%;
+    left:25%;
+}
+div.yljj>div>a>img{
+    width:70%;
+}
+div.yljj>div:hover img{
+    animation:bs 2s 1;
+}
+/*图片悬停放大后缩小动画*/
+@keyframes bs {
+    0%{transform:scale(1.0);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1.0);}
+}
+/*伊利新闻*/
+div.news{
+    position:relative;
+}
+div.news>#sm_b{
+    width:25%;
+    position:absolute;
+    top:45%;
+    left:55%;
+}
+div.news>#sm_b .wz1{
+    color:#00a1ed;
+    font-family: "Microsoft YaHei";
+}
+/*参观*/
+div.vis{
+    position: relative;
+}
+div.vis>#sm_x{
+    position: absolute;
+    top:20%;
+    left:20%;
+}
+
+div.vis>#sm_x>img.ewm{
+    width:30%;
+    height:30%;
+}
+div.vis>#sm_x>img.ewm:hover{
+    animation:bs 2s 1;
+}
+/*精彩合作*/
+div.coop{
+    position:relative;
+}
+div.coop>div{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.coop>div:nth-child(2) h1{
+    position:absolute;
+    top:5%;
+    left: 38%;
+    z-index:1000;
+}
+div.coop>div>a>img.pic1{
+    position:absolute;
+    top:15%;
+    left:25%;
+}
+div.coop>div:hover img{
+    animation:bs 2s 1;
+}
+
+
+
+
+
+
+@media screen and (min-width:992px){
+
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+
+}
+@media screen and (min-width:576px){
+
+}
