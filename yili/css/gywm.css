@@ -118,7 +118,7 @@ div.qygm2>.bt2>.p2{
         padding-bottom: 10px;
     }
 }
-@media screen and (min-width:576px){
+@media screen and (max-width:767px){
     div.ylpz>div.x_k1{
         display: none;
     }

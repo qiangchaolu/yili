@@ -55,20 +55,19 @@ $(document).ready(function(){
 });
 
 //Êó±êĞüÍ£ËÑË÷¿òÏÔÊ¾
-var $search=$(".header>.header_right>ul>li:last-child");
+var $search=$(".header>.header_right>ul:last-child .h_search");
 $search.on("mouseenter",function(){
-    $(".header>.header_right .h_search_avtive").show();
+    $(".header>.header_right #h_search_avtive").show();
 })
 $search.on("mouseleave",function(){
-    $(".header>.header_right .h_search_avtive").hide();
+    $(".header>.header_right #h_search_avtive").hide();
 })
 
 //ÈÃ¼üÅÌenterÊµÏÖµã»÷ËÑË÷µÄ¹¦ÄÜ
 $search.click(function(){
-    var value=$(".h_search_active").val();
+    var value=$(".qsrnr").val();
     if(value.trim().length!==0){
         $(window).attr("location","http://www.baidu.com");
-        value.removeAttr();
     }
 })
 $(".h_search").keyup(function(e){
@@ -77,13 +76,12 @@ $(".h_search").keyup(function(e){
     }
 })
 
-//µã»÷µ¼º½À¸ ±³¾°Í¼Æ¬×ª»»
-$(".header>.header_left>div>div#content>ul>li").on("click",function(e){
+//ĞüÍ£µ¼º½À¸ ±³¾°Í¼Æ¬×ª»»
+$(".header>.header_left>div>div#content>ul>li").mouseenter(function(e){
     e.preventDefault()//×éÖ¯Ä¬ÈÏĞĞÎª
     $(this).addClass("active")
         .siblings().removeClass("active")
 })
-
 //½Å²¿   µ±Êó±êĞüÍ£ÔÚÎ¢ĞÅÍ¼ÉÏÊ±,¶şÎ¬ÂëÏÔÊ¾
 $(document).ready(function(){
     $("#wxpic").mouseover(function (){
@@ -94,3 +92,12 @@ $(document).ready(function(){
     });
 })
 
+//Êó±êĞüÍ£  ·ÖÏíµ¼º½ÏÔÊ¾
+$(document).ready(function(){
+    $(".xuanfu>span").mouseover(function (){
+        $(".xuanfu>span>.h_side").show();
+    });
+    $(".xuanfu>span").mouseout(function (){
+        $(".xuanfu>span>.h_side").hide();
+    });
+});

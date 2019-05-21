@@ -2,11 +2,73 @@
     margin: 0;
     padding: 0;
 }
+/*悬浮*/
+.xuanfu{
+    position: fixed;
+    right: 0;
+    bottom:10%;
+    width: 48px;
+    height: 100px;
+    z-index: 100;
+}
+.xuanfu>span{
+    background: url(../img/h_and_f/share.png) no-repeat;
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-bottom: 7px;
+}
+.xuanfu .h_side{
+    width: 48px;
+    position: absolute;
+    top: -150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #fff;
+    display: none;
+}
+.xuanfu .h_side>a:first-child{
+    background:url("../img/h_and_f/wxside.png") no-repeat;
+    background-size:48px 48px;
+    display:block;
+    height: 48px;
+    width: 48px;
+}
+.xuanfu .h_side>a:first-child:hover{
+    background:url("../img/h_and_f/wxsideh.png") no-repeat;
+}
+.xuanfu .h_side>a:nth-child(2){
+    background: url("../img/h_and_f/qqside.png") no-repeat;
+    background-size:48px 48px;
+    display:block;
+    width: 48px;
+    height: 48px;
+}
+.xuanfu .h_side>a:nth-child(2):hover{
+    background: url("../img/h_and_f/qqsideh.png") no-repeat;
+}
+.xuanfu .h_side>a:nth-child(3){
+    background: url("../img/h_and_f/wbside.png") no-repeat;
+    background-size:48px 48px;
+    display:block;
+    height: 48px;
+    width: 48px;
+}
+.xuanfu .h_side>a:nth-child(3):hover{
+    background:url("../img/h_and_f/wbsideh.png") no-repeat;
+}
+.xuanfu>a{
+    background:url("../img/h_and_f/top.png") no-repeat;
+    display: block;
+    width: 48px;
+    height: 48px;
+}
 /*头部样式*/
 .header{
     position: fixed;
     top:0;
-    z-index:1000;
+    z-index:10;
     background:#0084d5;
     width:100%;
     height:69px
@@ -71,7 +133,7 @@ div.subnav>ul>li:hover a{
     background: #78BE20 url(../img/h_and_f/search.png) no-repeat center;
     float: right;
 }
-.header>.header_right .h_search_avtive{
+.header>.header_right #h_search_avtive{
     width: 290px;
     height: 69px;
     position: absolute;
@@ -80,7 +142,7 @@ div.subnav>ul>li:hover a{
     display:none;
     padding: 13px 0 0 10px;
 }
-.header>.header_right .h_search_avtive .qsrnr{
+.header>.header_right #h_search_avtive .qsrnr{
     height: 42px;
     line-height: 69px;
     width: 280px;
@@ -170,11 +232,7 @@ div.privacy>a,span{
     .header>.header_left img{
         margin-bottom:5px !important;
     }
-    .header>.header_left button{
-        position: fixed;
-        left: 400px;
-        top:15px;
-    }
+
     div.subnav{
         display: none !important;
     }

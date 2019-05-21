@@ -1,3 +1,7 @@
+*{
+     margin: 0;
+     padding: 0;
+}
 .header{
     width: 100%;
     height: 69px;
@@ -47,10 +51,11 @@ div.yljj>div{
 div.yljj>div a{
     position:absolute;
     top:75%;
-    left:25%;
+    left:50%;
 }
 div.yljj>div>a>img{
-    width:70%;
+    width:250px;
+    margin-left: -125px;
 }
 div.yljj>div:hover img{
     animation:bs 2s 1;
@@ -71,9 +76,24 @@ div.news>#sm_b{
     top:45%;
     left:55%;
 }
+div.news:hover #sm_b{
+    animation: zy 2s 1;
+}
 div.news>#sm_b .wz1{
     color:#00a1ed;
     font-family: "Microsoft YaHei";
+}
+div.news>#sm_b a:last-child:hover{
+    animation: zy 1s 1;
+}
+/*鼠标悬停图片变亮*/
+div.news>#sm_b a>img:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+@keyframes zy {
+    0%{transform: translateX(-30px);}
+    100%{transform:translateX(0px);}
 }
 /*参观*/
 div.vis{
@@ -81,7 +101,7 @@ div.vis{
 }
 div.vis>#sm_x{
     position: absolute;
-    top:20%;
+    top:15%;
     left:20%;
 }
 
@@ -91,6 +111,13 @@ div.vis>#sm_x>img.ewm{
 }
 div.vis>#sm_x>img.ewm:hover{
     animation:bs 2s 1;
+}
+div.vis:hover #sm_x{
+    animation: sx 2s 1;
+}
+@keyframes sx {
+    0%{transform: translateY(-30px);}
+    100%{transform:translateY(0px);}
 }
 /*精彩合作*/
 div.coop{
@@ -103,13 +130,18 @@ div.coop>div{
 div.coop>div:nth-child(2) h1{
     position:absolute;
     top:5%;
-    left: 38%;
+    left: 50%;
     z-index:1000;
+    width: 300px;
+    margin-left: -150px;
+    text-align: center;
 }
 div.coop>div>a>img.pic1{
     position:absolute;
     top:15%;
-    left:25%;
+    left:50%;
+    width: 240px;
+    margin-left: -120px;
 }
 div.coop>div:hover img{
     animation:bs 2s 1;
@@ -125,8 +157,35 @@ div.coop>div:hover img{
 }
 
 @media screen and (min-width:768px) and (max-width: 991px){
-
+    div.news>#sm_b h1{
+        font-size: 30px;
+    }
+    div.news>#sm_b>div>img{
+        width:30%;
+        height: 30%;
+    }
+    div.news>#sm_b h4{
+        font-size: 12px;
+    }
+    div.vis>#sm_x h1{
+        font-size: 30px;
+    }
+    div.vis>#sm_x p{
+        font-size: 12px;
+    }
+    div.vis>#sm_x>a>img{
+        width: 50%;
+        height: 50%;
+    }
+    div.vis>#sm_x:last-child{
+        width:30%;
+    }
 }
-@media screen and (min-width:576px){
-
+@media screen and (max-width:767px){
+    div.news>#sm_b{
+        display: none;
+    }
+    div.vis>#sm_x{
+        display: none;
+    }
 }

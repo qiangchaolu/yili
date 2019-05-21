@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*推荐新闻*/
+.tjxw{
+    margin-top:45px;
+    padding-bottom: 20px;
+}
+.tjxw>span{
+    font-size: 1.875em;
+    color: #666;
+    height: 2.6em;
+    display: block;
+    width: 96%;
+    line-height: 2.6em;
+    margin-left: 4%;
+}
+.tjxw>div>div:first-child img{
+    height:508.45px;
+}
+.tjxw>div>div:last-child>img{
+    height: 508.45px;
+}
+.tjxw .xwjs1{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.tjxw .xwjs1>a>p{
+    font-size: 20px;
+    color: #0084D5 !important;
+    margin-bottom: 0;
+}
+.tjxw .xwjs1>a:nth-child(3){
+    background:url("../img/index/qq.png") no-repeat;
+    background-size: 20px 20px;
+    margin-top: 0;
+    padding-left: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+.tjxw .xwjs1>a:nth-child(4){
+    background:url("../img/index/weixin.png") no-repeat;
+    background-size: 20px 20px;
+    margin-top: 0;
+    padding-left: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+.tjxw .xwjs1>a:nth-child(5){
+    background:url("../img/index/sina.png") no-repeat;
+    background-size: 20px 20px;
+    margin-top: 0;
+    padding-left: 20px;
+    line-height: 20px;
+    height: 20px;
+}
+.tjxw .xwjs1>.wz1{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+/*企业视频*/
+.qysp>div{
+    width: 100%;
+}
+.qysp>div>div{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.qysp>div>div ul{
+    width:100%;
+    padding-left:15% !important;
+    position: relative;
+}
+/*左边小块*/
+.qysp>div>div:first-child .xwleft{
+    width:100%;
+    height: 372px;
+    position: absolute;
+    right: 7.5px;
+    background-color:#e4e4e4;
+}
+.qysp>div>div>div.xwleft>ul>p{
+    display: block;
+    width: 40%;
+    padding-top:8%;
+    font-size: 30px;
+    padding-bottom:2%;
+    border-bottom: 1px solid #999;
+}
+.qysp>div>div a{
+    display: inline-block;
+    font-size: 14px;
+    width:49%;
+    height: 30px;
+    line-height: 30px;
+    color:#666 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.qysp>div>div a:hover{
+    color: #0084D5 !important;
+    text-decoration: none;
+}
+.qysp ul>li{
+    width:100%;
+    height:30px;
+    list-style: none;
+    position: relative;
+}
+.qysp ul>li span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.qysp .qqbg{
+    display: inline-block;
+    background:url("../img/index/qq.png") no-repeat;
+    background-size: 20px 17px;
+    background-position: center;
+    padding-left: 20px;
+    line-height: 30px;
+    width: 20px;
+    height: 30px;
+    position:relative;
+    left: 15%;
+}
+.qysp .wxbg{
+    display: inline-block;
+    background:url("../img/index/weixin.png") no-repeat;
+    background-size: 20px 17px;
+    background-position: center;
+    padding-left: 20px;
+    line-height: 30px;
+    width: 20px;
+    height: 30px;
+    position:relative;
+    left: 15%;
+}
+.qysp .sinbg{
+    display: inline-block;
+    background:url("../img/index/sina.png") no-repeat;
+    background-size: 20px 17px;
+    background-position: center;
+    padding-left: 20px;
+    line-height:30px;
+    width: 20px;
+    height: 30px;
+    position:relative;
+    left: 15%;
+}
+.qysp .qqbg:hover,
+      .sinbg:hover,
+      .wxbg:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.qysp>div>div  .xwleft>ul>a{
+    border-radius: 22px !important;
+    width: 112px !important;
+    height: 3.14em;
+    background: url(../img/news/icon01.png) no-repeat right top;
+    font-size: 0.875em;
+    line-height: 3.14em;
+    color: #0084D5 !important;
+    margin-top: 3%;
+    transition: all 1s;
+}
+.qysp>div>div  .xwleft>ul>a:hover{
+    background:#fff url("../img/news/arr02g.png") no-repeat right top;
+    color: #78BE20 !important;
+}
+/*右边小块*/
+.qysp>div>div:last-child .xwright{
+    width:100%;
+    height: 372px;
+    position:relative;
+    left: 7.5px;
+    background-color:#e4e4e4;
+}
+.qysp .xwright>div .spl{
+    width: 227px;
+    height:200px;
+    background-color: rgb(0, 0, 0);
+}
+.qysp .xwright>div{
+    width: 674.5px;
+    height: 347.92px;
+    padding-left: 15%;
+}
+.qysp .xwright>div>p{
+    display: block;
+    width:229.33px;
+    height: 103.31px;
+    padding-top:7%;
+    font-size: 30px;
+    padding-bottom:2%;
+    border-bottom: 1px solid #999;
+}
+.qysp .xwright>div .spr{
+    width:70%;
+    padding-left: 10%;
+}
+.qysp .xwright>div .spr>a:first-child{
+    font-size: 1.5em;
+    line-height: 1.25em;
+    color: #666 !important;
+}
+.qysp .xwright>div .spr>p{
+    font-size: 0.8em;
+    height: 1.5em;
+    margin-top:10px;
+}
+.qysp .xwright>div .spr>a:last-child{
+    display: block;
+    border-radius: 22px !important;
+    width: 112px !important;
+    height: 3.14em;
+    background: url(../img/news/icon01.png) no-repeat right top;
+    font-size: 0.875em;
+    line-height: 3.14em;
+    color: #0084D5 !important;
+    margin-top: 10%;
+    transition: all 1s;
+}
+.qysp .xwright>div .spr>a:last-child:hover{
+    background:#fff url("../img/news/arr02g.png") no-repeat right top;
+    color: #78BE20 !important;
+}
+/*精彩合作*/
+.jchz{
+    margin-bottom: 20px;
+}
+.jchz>span{
+    font-size: 30px;
+    color: #6c6c6c;
+    margin-left: 5%;
+}
+.jchz>a{
+    display: block;
+    border: 2px solid #0084D5;
+    width: 161px;
+    height: 31px;
+    font-size: 0.75em;
+    float: right;
+    line-height: 31px;
+    text-align: center;
+    color: #0084D5 !important;
+    margin-top:14px;
+    margin-right: 5%;
+}
+.jchz>a:hover{
+    color: #0084D5;
+    animation: sx 1s ease 1;
+}
+@keyframes sx {
+    0%{transform: scale(1)}
+    50%{transform: scale(0.7)}
+    100%{transform: scale(1)}
+}
+.jchz>.jc_pics{
+    background-color: #eee;
+    height:100%;
+}
+.jchz>.jc_pics>div{
+    width: 100%;
+    height:100%;
+    margin-bottom: 200px;
+}
+.jchz>.jc_pics>div>a{
+    width: 100%;
+}
+.jchz>.jc_pics>div>a>img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.jchz>.jc_pics>div>a>.hz_wz{
+    display: block;
+    font-size: 26px;
+    color: #0084D5;
+    text-align: center;
+    margin-top: 5%;
+}
+.jchz>.jc_pics>div>p{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #6c6c6c;
+}
+
+
+
+
+
+
+@media screen and (min-width:992px){
+
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+
+}
+@media screen and (max-width:767px){
+    .qysp ul>li .qqbg{
+        display: none;
+    }
+    .qysp ul>li .sinbg{
+        display: none;
+    }
+    .qysp ul>li .wxbg{
+        display: none;
+    }
+    .jchz>.jc_pics{
+
+    }
+}
+
+
